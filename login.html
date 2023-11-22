@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title> Flickr Login</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
 
     <style>
@@ -13,8 +13,8 @@
         }
 
         #shift {
-            border: 1px solid gold !important;
-            transform: translate(-5px, 0px);
+            /* border: 1px solid gold !important; */
+            transform: translate(-10px, -70px);
 
         }
 
@@ -32,7 +32,7 @@
 
             }
 
-            img {
+            #bg-image {
                 display: none;
             }
 
@@ -46,30 +46,32 @@
 
             #move {
                 /* border: 1px solid red !important; */
-                transform: translate(20px,0px);
-                
+                transform: translate(20px, 0px);
+
             }
 
             #shift {
-            border: 1px solid gold !important;
-            transform: translate(-5px, 20px);
+                /* border: 1px solid gold !important; */
+                transform: translate(-5px, 20px);
 
-        }
+            }
 
-        #img-flickr{
-            height: 40px;
-        }
+            #img-flickr {
+                height: 40px;
+                /* border: 1px solid purple !important; */
+
+            }
+
+            #lap {
+                border: 1px solid green !important;
+                display: none;
+
+            }
         }
     </style>
 </head>
 
 <body>
-    <!-- <nav class="border border-black bg-black d-lg-none d-md-none">
-        <div id="img-flickr" class="col-md-3 mb-1 mb-md-0">
-            <img style=" width: 50px" src="images/www_flickr_com/flickr2-removebg-preview.png" alt="">
-            <img src="images/www_flickr_com/flickr1-removebg-preview.png" alt="">
-        </div> -->
-    </nav>
     <div id="transform" class="container  d-sm-none col-xl-10 col-xxl-8 px-4 py-5 position-absolute ">
         <div class="row align-items-center   g-lg-5 py-5">
             <div class="col-md-10 mx-auto align-content-center  col-lg-5">
@@ -97,7 +99,7 @@
                     <hr class="my-4">
                     <div class="container d-flex text-center ">
                         <p class="">Not a Flickr member? </p>
-                        <a class="text-decoration-none px-2" href="">sign up here</a>
+                        <a class="text-decoration-none px-2" target="_blank" href="signup.html">sign up here</a>
                     </div>
                 </form>
             </div>
@@ -105,20 +107,27 @@
     </div>
 
 
-    <nav class="border border-black bg-success d-lg-none  position-fixed fixed-top">
-        <div id="img-flickr" class="col-md-3 mb-1 mb-md-0 position-relative">
-            <img style=" width: 50px" src="images/www_flickr_com/flickr2-removebg-preview.png" alt="">
-            <img src="images/www_flickr_com/flickr1-removebg-preview.png" alt="">
+    <nav class=" d-lg-none d-md-none">
+        <div id="img-flickr" class="col-md-3 mb-1 mb-md-0 d-lg-none d-md-none position-fixed fixed-top bg-dark">
+            <img style=" width: 90px; height: 40px; transform: translateX(20px);"
+                src="images/www_flickr_com/flickr3.png" alt="">
         </div>
     </nav>
-    <!-- <div id="shift" class="container col-xl-10 col-xxl-8 px-4 py-5 position-absolute ">
+    <br>
+    <div id="shift" class="container col-xl-10 col-xxl-8 px-4 py-5 position-absolute ">
         <div class="row align-items-center  g-lg-5 py-5">
             <div id="div" class="col-md-10 mx-auto align-content-center  col-lg-5">
-                <form class="p-4 p-md-5  rounded-3 bg-white">
+                <form class="p-1 p-md-5  rounded-3 bg-white">
+                    <div class=" col-6 m-auto text-center">
+                        <img src="images/www_flickr_com/flickr2-removebg-preview.png" alt="">
+                        <p>Log in to Flickr</p>
+                    </div> <br>
+
                     <div class="form-floating mb-3">
                         <input type="email" class="form-control" id="floatingInput" placeholder="Email address">
                         <label for="floatingInput">Email address</label>
                     </div>
+
                     <div class="form-floating mb-3">
                         <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
                         <label for="floatingPassword">Password</label>
@@ -138,13 +147,78 @@
                     <hr class="my-4">
                     <div id="move" class="container   d-flex">
                         <p class="">Not a Flickr member? </p>
-                        <a class="text-decoration-none px-2" href="">sign up here</a>
+                        <a class="text-decoration-none px-2" target="_blank" href="signup.html">sign up here</a>
                     </div>
                 </form>
+
+                <div class=" my-2 justify-content-evenly">
+                    <nav id="lap" class="navbar navbar-expand-lg ">
+                        <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
+                            <ul class="navbar-nav col-12 justify-content-lg-between ">
+                                <li class="nav-item dropdown">
+                                    <div class="dropdown-toggle text-white" data-bs-toggle="dropdown"
+                                        aria-expanded="false">
+                                        English
+                                    </div>
+                                    <ul class="dropdown-menu dropdown-menu-white">
+                                        <li><a class="dropdown-item" href="#">Deutsch</a></li>
+                                        <li><a class="dropdown-item" href="#">Español</a></li>
+                                        <li><a class="dropdown-item" href="#">English</a></li>
+                                    </ul>
+                                </li>
+                                <div class=" mx-5 ">
+                                    <a class="text-decoration-none text-white" href="">
+                                        help
+                                    </a>
+                                    <a class="text-decoration-none text-white" href="">
+                                        Privacy
+                                    </a>
+                                    <a class="text-decoration-none text-white" href="">
+                                        Term
+                                    </a>
+                                </div>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+
+                <div class="d-lg-none d-md-none" style="position: relative; top: 100px; height: 30px;">
+                    <!-- <nav  class="navbar navbar-expand-lg "> -->
+                        <!-- <div class="collapse navbar-collapse" id="navbarNavDarkDropdown"> -->
+                            <ul class="navbar-nav col-12 justify-content-lg-between ">
+                                <li class="nav-item dropdown">
+                                    <div class="dropdown-toggle text-black col-5"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        English
+                                    </div>
+                                    <ul class="dropdown-menu dropdown-menu-white">
+                                        <li><a class="dropdown-item" href="#">Deutsch</a></li>
+                                        <li><a class="dropdown-item" href="#">Español</a></li>
+                                        <li><a class="dropdown-item" href="#">English</a></li>
+                                    </ul>
+                                </li>
+                                <div style="transform: translate(170px,-24px);" class="mx-5 col-5 ">
+                                    <a class="text-decoration-none text-black" href="">
+                                        help
+                                    </a>
+                                    <a class="text-decoration-none text-black" href="">
+                                        Privacy
+                                    </a>
+                                    <a class="text-decoration-none text-black" href="">
+                                        Terms
+                                    </a>
+                                </div>
+                            </ul> 
+                        <!-- </div> -->
+                    <!-- </nav> -->
+                </div>
             </div>
         </div>
-    </div> -->
-    <img style="height:100vh; width: 100vw;" class="" src="images/www_flickr_com/background img.jpg" alt="">
+    </div>
+    </div>
+
+    <img id="bg-image" style="height:100vh; width: 100vw;" class="" src="images/www_flickr_com/background img.jpg"
+        alt="">
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
