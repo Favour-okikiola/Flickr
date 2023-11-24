@@ -96,6 +96,50 @@
     
             }
         }
+
+        @media screen and (width: 768px) {
+            #nav {
+                border: 1px solid green;
+                width: 10px !important;
+
+            }
+
+            #img-flickr {
+                /* border: 1px solid red; */
+                width: 770px !important;
+
+            }
+        }
+
+        
+        @media screen and (width:1440px) {
+            #nav {
+                /* border: 1px solid green; */
+                width: 10px !important;
+                /* display: none; */
+            }
+
+            #img-flickr {
+                /* border: 1px solid red; */
+                width: 1440px !important;
+
+            }
+
+            #shift {
+                /* border: 1px solid red; */
+                transform: translate(200px,30px);
+            }
+
+            #ss {
+                /* border: 1px solid green; */
+                transform: translate(-50px,30px);
+            }
+
+            #div {
+                /* border: 1px solid yellow; */
+                transform: translate(-50px, 0px) !important;
+            }
+        }
     </style>
 </head>
 
@@ -164,10 +208,9 @@
         </div>
     </nav>
     <div id="shift" class="container col-xl-10 col-xxl-8 px-4 py-5 position-absolute ">
-
-        <div class="row align-items-center  g-lg-5 py-5">
+        <div id="ss" class="row align-items-center  g-lg-5 py-5">
             <div id="div" class="col-md-10 mx-auto align-content-center  col-lg-5">
-                <form class="p-1 p-md-5  rounded-3 bg-white">
+                <form id="form" class="p-1 p-md-5  rounded-3 bg-white">
                     <div class=" col-6 m-auto text-center">
                         <img src="images/www_flickr_com/flickr2-removebg-preview.png" alt="">
                         <p>Log in to Flickr</p>
